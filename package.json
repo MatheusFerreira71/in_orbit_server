@@ -1,0 +1,50 @@
+{
+  "name": "in_orbit_server",
+  "version": "1.0.0",
+  "description": "A API do In.Orbit é uma solução robusta para gerenciar metas de forma eficiente. Com endpoints para criar, atualizar e monitorar metas, oferece integração com diversos sistemas e funcionalidades como relatórios de progresso. Ideal para desenvolvedores que buscam uma solução simples e escalável para gerenciamento de metas.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch --env-file .env src/http/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "tsx --env-file .env src/db/seed.ts"
+  },
+  "keywords": [
+    "Node",
+    "Typescript",
+    "Drizzle",
+    "PostgreSQL",
+    "Dayjs",
+    "Fastify",
+    "Zod",
+    "Biome",
+    "Docker"
+  ],
+  "author": "Matheus Ferreira <matheusfernandofreire@hotmail.com> (https://github.com/MatheusFerreira71/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@types/node": "^22.5.4",
+    "drizzle-kit": "^0.24.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "dayjs": "^1.11.13",
+    "drizzle-orm": "^0.33.0",
+    "fastify": "^4.28.1",
+    "fastify-type-provider-zod": "^2.0.0",
+    "postgres": "^3.4.4",
+    "zod": "^3.23.8"
+  },
+  "homepage": "https://github.com/MatheusFerreira71/in_orbit_server#readme",
+  "bugs": {
+    "url": "https://github.com/MatheusFerreira71/in_orbit_server/issues",
+    "email": "matheusfernandofreire@hotmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusFerreira71/in_orbit_server"
+  }
+}
